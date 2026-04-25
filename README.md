@@ -49,7 +49,7 @@ The Lookout is a **DIY motion-activated security camera** built around the ESP32
 | **Micro USB Cable** | Data-capable | — | **MUST support data transfer** |
 | **MicroSD Card** | ≤32GB, FAT32 | — | Required for default firmware test |
 
-> ⚠️ **Important Note about PSRAM**: Your specific board variant may **NOT have PSRAM** and instead **requires a MicroSD card** for the default firmware to work. The custom firmware in this project works with both configurations.
+> 
 
 ### Optional
 - **5V/1A Power Supply** — For standalone deployment (without PC)
