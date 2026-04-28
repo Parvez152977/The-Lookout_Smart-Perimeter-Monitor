@@ -1,0 +1,416 @@
+# ============================================
+# The Lookout — Smart Perimeter Monitor
+# Git Ignore File
+# ============================================
+
+# ============================================
+# Python Virtual Environments
+# ============================================
+
+# Venv (standard Python virtual environment)
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*/
+.venv.bak/
+
+# Virtualenv
+.env/
+.venv/
+
+# Pipenv
+.pipenv/
+Pipfile.lock
+
+# Poetry
+.poetry/
+poetry.lock
+
+# Conda
+.conda/
+envs/
+
+# ============================================
+# IDE - JetBrains (PyCharm, IntelliJ, CLion)
+# ============================================
+
+.idea/
+.idea/*
+!.idea/.gitkeep
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+.idea/caches/
+.idea/dictionaries/
+.idea/libraries/
+.idea/shelf/
+.idea/tasks.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/datasources.xml
+.idea/dataSources/
+.idea/codeStyles/
+.idea/runConfigurations/
+.idea/inspectionProfiles/
+
+# ============================================
+# Python
+# ============================================
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pyenv
+.python-version
+
+# ============================================
+# Databases
+# ============================================
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+perimeter.db
+perimeter.db-journal
+*.db-shm
+*.db-wal
+
+# ============================================
+# Uploaded Images & Media
+# ============================================
+
+# Captured motion images
+backend/uploads/
+uploads/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+
+# But keep a .gitkeep to preserve folder structure
+!backend/uploads/.gitkeep
+!uploads/.gitkeep
+
+# ============================================
+# Arduino / ESP32
+# ============================================
+
+# Arduino IDE
+*.ino.previous
+*.ino.with_bootloader.bin
+*.ino.dSYM/
+build/
+*.elf
+*.hex
+*.bin
+arduino_cache/
+arduino/sketches/
+
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+.clang_complete
+.gcc-flags.json
+
+# ESP32 build artifacts
+esp32-cam/
+firmware/firmware.ino.bin
+firmware/firmware.ino.partitions.bin
+firmware/firmware.ino.bootloader.bin
+firmware/*.d
+
+# ============================================
+# IDE and Editor Files
+# ============================================
+
+# Visual Studio Code
+.vscode/
+.vscode/*
+!.vscode/settings.json.example
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+*.sublime-settings
+
+# Vim
+*.swp
+*.swo
+*~
+.~*
+.vim/
+.vimrc
+.gvimrc
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Eclipse
+.project
+.classpath
+.settings/
+.metadata
+*.pydevproject
+
+# NetBeans
+nbproject/
+nb-configuration.xml
+
+# ============================================
+# Operating System Files
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.dmg
+.mac/
+__MACOSX/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+BootLog.*
+ntuser.dat*
+ntuser.ini
+*.lnk
+
+# Linux
+.directory
+*.part
+*~
+.fuse_hidden*
+.document.events
+.Trash-*
+
+# ============================================
+# Logs and Temporary Files
+# ============================================
+
+# Logs
+*.log
+logs/
+log/
+*.pid
+*.seed
+*.pid.lock
+*.log.*
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+.cache/
+temp/
+tmp/
+*.swp
+*.swo
+*~
+
+# ============================================
+# Environment & Secrets
+# ============================================
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# Secrets and configuration (contains passwords/keys)
+config.py
+config_local.py
+secrets.py
+secrets.json
+secret/
+credentials.json
+*.key
+*.pem
+*.crt
+*.p12
+*.p8
+
+# But keep the example config
+!config.example.py
+!backend/config.example.py
+!.env.example
+
+# ============================================
+# Docker
+# ============================================
+
+.dockerignore
+docker-compose.override.yml
+*.tar.gz
+*.tar
+docker/
+Dockerfile.local
+
+# ============================================
+# Testing
+# ============================================
+
+# pytest
+.pytest_cache/
+.pytest_cache/
+
+# unittest
+unittest.cfg
+test_results/
+tests/__pycache__/
+
+# ============================================
+# Backup Files
+# ============================================
+
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.save
+
+# ============================================
+# Project Specific Excludes
+# ============================================
+
+# Ignore compiled firmware
+firmware/*.bin
+firmware/*.elf
+firmware/*.hex
+
+# Ignore captured images from tests
+test_images/
+test_uploads/
+screenshots/
+*.png
+*.jpg
+
+# Ignore serial monitor logs
+serial_log.txt
+com_port.log
+serial_output.txt
+
+# Ignore database backups
+*.db.backup
+*.db.bak
+*.sqlite.backup
+
+# Ignore any local overrides
+local_overrides.py
+local_settings.py
+*.local.py
+
+# Ignore Jupyter notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# Ignore Node modules (if any frontend bits)
+node_modules/
+package-lock.json
+
+# ============================================
+# Keep these important files
+# ============================================
+
+# Keep example configs
+!config.example.py
+!backend/config.example.py
+!.env.example
+
+# Keep directory structures
+!.gitkeep
+!*/**/.gitkeep
+!**/.gitkeep
+
+# Keep sample images if needed
+!sample_images/
+!sample_images/*.jpg
