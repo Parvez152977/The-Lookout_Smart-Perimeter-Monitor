@@ -19,7 +19,7 @@
 
 ## 📖 What is The Lookout?
 
-The Lookout is a **DIY motion-activated security camera** built around the ESP32-CAM module. When the PIR sensor detects movement, it instantly captures a photo and sends it to your Telegram account — all without monthly fees or cloud subscriptions.
+The Lookout is a **DIY motion-activated security system** built around the ESP32-CAM module. When the PIR sensor detects movement, it instantly captures a photo and sends it to your Telegram account plus it has a web dashboard where you can live view and past detections — all without monthly fees or cloud subscriptions.
 
 ---
 
