@@ -61,7 +61,7 @@ bool initCamera() {
     }
 
     // ---- Fine-tune sensor settings ----
-    // These improve image quality in typical indoor/outdoor conditions
+    // changes could be made here to adjust brightness, contrast, saturation, etc.
     sensor_t* s = esp_camera_sensor_get();
     if (s != NULL) {
         s->set_brightness(s, 0);     // -2 to 2
@@ -97,8 +97,8 @@ camera_fb_t* captureFrame() {
     }
 
     // Discard the first frame — camera auto-exposure needs
-    // a moment to settle after being idle. Without this the
-    // first captured image is often too dark or blown out.
+    // a moment after being idle. Without this the
+    // first captured image is often too dark or too bright.
     camera_fb_t* discard = esp_camera_fb_get();
     if (discard) {
         esp_camera_fb_return(discard);

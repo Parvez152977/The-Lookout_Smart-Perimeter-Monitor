@@ -2,7 +2,7 @@
 #define SECRETS_H
 
 // ============================================================
-// Smart Perimeter Monitor — Credentials Template
+// The Lookout — Credentials Template
 // ============================================================
 // INSTRUCTIONS:
 //   1. Copy this file and rename the copy to secrets.h
@@ -11,7 +11,7 @@
 //   4. This example file IS committed — it shows the format
 // ============================================================
 
-#define WIFI_SSID       "YOUR_WIFI_NETWORK_NAME"
-#define WIFI_PASSWORD   "YOUR_WIFI_PASSWORD"
+#define WIFI_SSID       "YOUR_WIFI_NETWORK_NAME/SSID"//access point name
+#define WIFI_PASSWORD   "YOUR_WIFI_PASSWORD"//access point password
 
 #endif // SECRETS_H

@@ -185,7 +185,7 @@ firmware/firmware.ino.bin
 firmware/firmware.ino.partitions.bin
 firmware/firmware.ino.bootloader.bin
 firmware/*.d
-
+!firmware/data/secrets.example.h
 # ============================================
 # IDE and Editor Files
 # ============================================

@@ -1,5 +1,5 @@
 // ============================================================
-// Smart Perimeter Monitor — WiFi Manager Implementation
+// The Lookout — WiFi Manager Implementation
 // ============================================================
 
 #include "wifi_manager.h"
@@ -56,7 +56,7 @@ void maintainWiFi() {
     }
 
     // Only retry every WIFI_RETRY_INTERVAL_MS milliseconds
-    // to avoid hammering the router
+    // to avoid overcrwoding the router
     unsigned long now = millis();
     if (now - _lastRetryTime < WIFI_RETRY_INTERVAL_MS) {
         return;

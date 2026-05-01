@@ -2,7 +2,7 @@
 #define WIFI_MANAGER_H
 
 // ============================================================
-// Smart Perimeter Monitor — WiFi Manager Header
+// The Lookout — WiFi Manager Header
 // Handles initial connection and automatic reconnection
 // ============================================================
 

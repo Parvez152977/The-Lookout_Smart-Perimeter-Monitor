@@ -1,5 +1,5 @@
 // ============================================================
-// Smart Perimeter Monitor — PIR Sensor Implementation
+// The Lookout — PIR Sensor Implementation
 // ============================================================
 
 #include "pir_sensor.h"
@@ -18,9 +18,8 @@ void initPIR() {
     pinMode(PIR_PIN, INPUT);
 
     // The HC-SR501 has a 30-60 second warmup period on first power.
-    // During warmup it can trigger randomly — this is normal hardware
-    // behaviour, not a wiring problem.
-    // We do NOT add a blocking delay here — the main sketch handles
+    // During warmup it can trigger randomly — not a wiring problem.
+    // do NOT add a blocking delay here — the main sketch handles
     // the boot sequence timing.
 
     DBGF("PIR sensor initialised on GPIO%d\n", PIR_PIN);
@@ -57,7 +56,7 @@ bool motionDetected() {
     // Without this a person walking slowly could trigger
     // dozens of uploads in quick succession.
     if ((now - _lastDetectionTime) < CAPTURE_COOLDOWN_MS) {
-        return false; // still in cooldown
+        return false; //in cooldown
     }
 
     // ---- Valid detection ----

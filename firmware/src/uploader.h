@@ -2,7 +2,7 @@
 #define UPLOADER_H
 
 // ============================================================
-// Smart Perimeter Monitor — HTTP Uploader Header
+// The Lookout — HTTP Uploader Header
 // Sends captured JPEG frames to the FastAPI backend
 // ============================================================
 

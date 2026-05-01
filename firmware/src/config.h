@@ -26,11 +26,11 @@
 #define FLASH_LED_PIN       4
 
 // ---- Camera Settings ---------------------------------------
-// FRAMESIZE options (comment/uncomment one):
+// FRAMESIZE options ():
 //   FRAMESIZE_QQVGA  — 160x120  (fastest upload, lowest detail)
 //   FRAMESIZE_QVGA   — 320x240  (good balance)
 //   FRAMESIZE_CIF    — 352x288
-   FRAMESIZE_VGA    — 640x480  (recommended — best balance)
+//   FRAMESIZE_VGA    — 640x480  (recommended — best balance)
 //   FRAMESIZE_SVGA   — 800x600  (slower, larger files)
 #define FRAME_SIZE          FRAMESIZE_VGA
 
@@ -73,7 +73,7 @@
 #endif
 
 // ---- AI Thinker ESP32-CAM Pin Map --------------------------
-// These are FIXED for the AI Thinker board — do NOT change
+// — do NOT change
 #define PWDN_GPIO_NUM       32
 #define RESET_GPIO_NUM      -1
 #define XCLK_GPIO_NUM        0

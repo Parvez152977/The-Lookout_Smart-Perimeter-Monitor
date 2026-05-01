@@ -1,5 +1,5 @@
 // ============================================================
-// Smart Perimeter Monitor — HTTP Uploader Implementation
+// The Lookout — HTTP Uploader Implementation
 // ============================================================
 
 #include "uploader.h"
@@ -99,7 +99,7 @@ const char* uploadResultString(UploadResult result) {
         case UPLOAD_NULL_FRAME:   return "Null frame";
         case UPLOAD_HTTP_FAILED:  return "HTTP connection failed";
         case UPLOAD_SERVER_ERROR: return "Server error";
-        default:                  return "Unknown";
+        default:                  return "Unknown Problem";
     }
 }
 
