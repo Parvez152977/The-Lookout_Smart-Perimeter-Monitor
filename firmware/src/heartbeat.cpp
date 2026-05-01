@@ -1,5 +1,5 @@
 // ============================================================
-// Smart Perimeter Monitor — Heartbeat Implementation
+// The Lookout — Heartbeat Implementation
 // ============================================================
 
 #include "heartbeat.h"

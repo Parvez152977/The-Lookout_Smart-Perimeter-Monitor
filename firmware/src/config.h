@@ -30,7 +30,7 @@
 //   FRAMESIZE_QQVGA  — 160x120  (fastest upload, lowest detail)
 //   FRAMESIZE_QVGA   — 320x240  (good balance)
 //   FRAMESIZE_CIF    — 352x288
-//   FRAMESIZE_VGA    — 640x480  (recommended — best balance)
+   FRAMESIZE_VGA    — 640x480  (recommended — best balance)
 //   FRAMESIZE_SVGA   — 800x600  (slower, larger files)
 #define FRAME_SIZE          FRAMESIZE_VGA
 

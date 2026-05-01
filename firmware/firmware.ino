@@ -1,14 +1,9 @@
 // ============================================================
-// Smart Perimeter Monitor — Main Sketch
-// ESP32-CAM (AI Thinker RBD-1407) + MB Programmer (RBD-2044)
+// The Lookout — Main Sketch
+// ESP32-CAM (AI Thinker RBD-1407) + MB Programmer
 //
 // UPLOAD PROCEDURE WITH MB BOARD:
-//   1. Snap ESP32-CAM onto MB programmer board
-//   2. Connect Micro USB to PC
-//   3. Arduino IDE: Board = "AI Thinker ESP32-CAM", Port = CH340 COM port
-//   4. Click Upload — MB board handles GPIO0 automatically
-//   5. Press RST button on MB board after upload completes
-//   6. Open Serial Monitor at 115200 baud
+//  Open Serial Monitor at 115200 baud for the IP address
 //
 // BEFORE FIRST USE:
 //   - Copy data/secrets.example.h → data/secrets.h
@@ -24,7 +19,7 @@
 #include "src/heartbeat.h"
 
 // ---- NTP Time Sync -----------------------------------------
-// NTP lets us timestamp images with real clock time
+// NTP timestamp images with real clock time
 // instead of just millis() since boot.
 // Uses a public NTP pool — requires internet access.
 #define NTP_SERVER "pool.ntp.org"
@@ -35,14 +30,14 @@
 static bool _systemReady = false;
 
 // ============================================================
-// setup() — runs once on boot
+// setup() — runs once
 // ============================================================
 void setup() {
   Serial.begin(115200);
   delay(500);  // give Serial time to stabilise before first print
 
   DBGLN("\n============================================");
-  DBGLN("  Smart Perimeter Monitor — Booting...");
+  DBGLN("  The Lookout — Booting...");
   DBGLN("============================================");
   DBGF("Camera ID   : %s\n", CAMERA_ID);
   DBGF("Camera Name : %s\n", CAMERA_NAME);
